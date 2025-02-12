@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="hatter.css">
     <title>Kezdőlap</title>
     <style>
+        
         .text-container a {
             display: inline-block;
             padding: 10px 20px;
@@ -15,15 +16,49 @@
             border-radius: 5px;
             margin: 5px 0;
             text-align: center;
-        }
+            width: 100%;  
+            box-sizing: border-box; }
+
         .text-container a:hover {
-            background-color: brown;
+            background-color: darkred;
         }
-        .text{
+
+        
+        .text {  
             font-size: small;
         }
-        .text2{
+
+        .text2 {
             color: red;
+        }
+
+        
+        .image-container img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        
+        @media (max-width: 600px) {
+            
+            .container {
+                padding: 10px;
+            }
+
+            
+            .text {
+                font-size: 14px;
+            }
+
+            .text-container {
+                padding: 20px;
+                text-align: center;
+            }
+
+            
+            .text-container a {
+                font-size: 16px; 
+            }
         }
     </style>
 </head>
@@ -53,7 +88,6 @@
             <div class="text">
             <p>Időtartam: 60 perc &nbsp;&nbsp; Korosztály: 14-99 év 
             &nbsp;&nbsp; Játszható: Laptopról &nbsp;&nbsp; Ár: Ingyenes
-                
            <p>Megjelenés: 2025. február 08.</p>
             <div class="text2">
 
