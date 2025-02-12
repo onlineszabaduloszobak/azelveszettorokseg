@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padlás</title>
+    <link rel="stylesheet" href="padlas.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #4b2e2a;
+            font-family: Arial, sans-serif;
+        }
+        .code-box {
+            padding: 20px;
+            border: 2px solid white;
+            background-color: #4b2e2a;
+            color: white;
+            text-align: center;
+            width: 500px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 40px;
+            margin: 5px;
+            font-size: 18px;
+            text-align: center;
+            border: 1px solid white;
+            background-color: #4b2e2a;
+            color: white;
+            padding: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: white;
+            color: brown;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d3d3d3;
+        }
+        #error-message {
+            margin-top: 15px;
+            color: yellow;
+            display: none;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            background-color: brown;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #d3d3d3;
+        }
+    </style>
+</head>
+<body>
+    <div class="code-box">
+        <p><b>ÍRD BE A KÓDOT</b></p>
+        <input type="text" id="digit1" maxlength="1" autocomplete="off">
+        <input type="text" id="digit2" maxlength="1" autocomplete="off">
+        <input type="text" id="digit3" maxlength="1" autocomplete="off"><br>
+        <button onclick="checkCode()">MEHET</button>
+        <p id="error-message"> <b>HIBÁS KÓD! </b><br> Próbáld újra, vagy nézd át a nyomokat! <br><br> Észrevétel esetén vagy még több segítségért cserébe vedd fel velünk a kapcsolatot az <b> <br>onlineszabaduloszobak@gmail.com </b> </br> email címen és 24 órán belül megpróbálunk válaszolni!</p>
+    </div>
+
+    <div class="button-container">
+        <a href="padlas1.html" class="button">1</a>
+        <a href="padlas2.html" class="button">2</a>
+        <a href="padlaskod.html" class="button code-button">KÓD</a>
+    </div>
+
+    <script>
+        function checkCode() {
+            const code = [
+                document.getElementById('digit1').value,
+                document.getElementById('digit2').value,
+                document.getElementById('digit3').value,
+              ].join('');
+
+            const correctCode = '342';
+            const errorMessage = document.getElementById('error-message');
+
+            if (code === correctCode) {
+                window.location.href = 'end0.html' 
+            } else {
+                errorMessage.style.display = 'block';
+            }
+        }
+    </script>
+    <a href="padlas.html">
+        <button>HA NEM LESZ JÓ A KÓD! <br> Katt ide! Vissza a szobába a nyomokért!</button>
+    </a>
+</body>
+</html>

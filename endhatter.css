@@ -1,0 +1,13 @@
+body {
+    background-image: url('padlas.jpg');
+    background-position: center; 
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
