@@ -7,73 +7,99 @@
     <link rel="stylesheet" href="hatter.css">
     <title>Kezdőlap</title>
     <style>
-        .text-container a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: brown;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 5px 0;
-            text-align: center;
-        }
+   .text-container {
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
 
-        .text-container a:hover {
-            background-color: brown;
-        }
+.image-container {
+    width: 100%;
+    height: auto;
+}
 
-        .text {
-            font-size: small;
-        }
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
 
-        .text2 {
-            color: red;
-        }
+.text-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    text-align: center;
+    width: auto; /* biztosítja, hogy ne nyúljanak el a gombok */
+}
 
-        @media (max-width: 600px) {
-            .container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                padding: 10px;
-            }
+.text-container a:hover {
+    background-color: brown;
+}
 
-            .image-container img {
-                max-width: 100%;
-                height: auto;
-            }
+.text {
+    font-size: small;
+}
 
-            .text-container {
-                max-width: 90%;
-                padding: 10px;
-            }
+.text2 {
+    color: red;
+}
 
-            .text-container a {
-                display: block;
-                width: 100%;
-                text-align: center;
-            }
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
 
-            @media (max-width: 768px) {
-                .button {
-                    padding: 6px 12px;
-                    font-size: 0.9rem;
-                }
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
 
-                .button-container {
-                    bottom: 10px;
-                    right: 10px;
-                }
-            }
+    .text-container {
+        max-width: 90%;
+        padding: 10px;
+    }
 
-            @media (max-width: 768px) {
-                body {
-                    background-size: contain;
-                }
-            }
+    .text-container a {
+        display: block; /* A gombok blokkszintűek lesznek, hogy teljes szélességet elfoglaljanak */
+        width: 100%; /* Teljes szélességet foglalnak el mobilon */
+        text-align: center; /* A szöveg középre igazítása */
+    }
 
-        }
+    .button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .button-container {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    body {
+        background-size: contain;
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .button-container {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
     </style>
 </head>
 
