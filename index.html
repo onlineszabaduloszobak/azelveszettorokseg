@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,15 +17,19 @@
             margin: 5px 0;
             text-align: center;
         }
+
         .text-container a:hover {
             background-color: brown;
         }
-        .text{  
+
+        .text {
             font-size: small;
         }
-        .text2{
+
+        .text2 {
             color: red;
         }
+
         @media (max-width: 600px) {
             .container {
                 display: flex;
@@ -33,22 +38,45 @@
                 text-align: center;
                 padding: 10px;
             }
+
             .image-container img {
                 max-width: 100%;
                 height: auto;
             }
+
             .text-container {
                 max-width: 90%;
                 padding: 10px;
             }
+
             .text-container a {
                 display: block;
                 width: 100%;
                 text-align: center;
             }
+
+            @media (max-width: 768px) {
+                .button {
+                    padding: 6px 12px;
+                    font-size: 0.9rem;
+                }
+
+                .button-container {
+                    bottom: 10px;
+                    right: 10px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                body {
+                    background-size: contain;
+                }
+            }
+
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
@@ -58,31 +86,35 @@
 
         <div class="text-container">
             <span>AZ ELVESZETT ÖRÖKSÉG</span>
-            
-            <p>Miklós professzor, miután hosszú éveken át kutatta az ősi legendákat, 
-                végre rábukkant egy titkos irásra, amely az eltűnt ereklye hollétét rejtette. 
-                A professzor háza, amely valaha a tudományos felfedezések központja volt mára egy titkos akadémiává alakult tele titkos ajtókkal és mechanizmusokkal.</p>
 
-            <p>Minden egyes szobában egy-egy bonyolult feladvány várja a kíváncsiakat, 
-                akik meg akarják fejteni a professzor titkait. 
-                Az ereklye a házban rejtőzik, de a helyes nyomokhoz vezető úton számos veszély 
-                leselkedik. <br>  <br>
+            <p>Miklós professzor, miután hosszú éveken át kutatta az ősi legendákat,
+                végre rábukkant egy titkos irásra, amely az eltűnt ereklye hollétét rejtette.
+                A professzor háza, amely valaha a tudományos felfedezések központja volt mára egy titkos akadémiává
+                alakult tele titkos ajtókkal és mechanizmusokkal.</p>
+
+            <p>Minden egyes szobában egy-egy bonyolult feladvány várja a kíváncsiakat,
+                akik meg akarják fejteni a professzor titkait.
+                Az ereklye a házban rejtőzik, de a helyes nyomokhoz vezető úton számos veszély
+                leselkedik. <br> <br>
 
                 <a href="eloszoba.html">INDULJON A FELFEDEZÉS!</a>
                 <br>
                 <a href="bemutato.html">Játékbemutató</a>
 
             <div class="text">
-            <p>Időtartam: 60 perc &nbsp;&nbsp; Korosztály: 14-99 év 
-            &nbsp;&nbsp; Játszható: Laptopról &nbsp;&nbsp; Ár: Ingyenes
-                
-           <p>Megjelenés: 2025. február 08.</p>
-            <div class="text2">
+                <p>Időtartam: 60 perc &nbsp;&nbsp; Korosztály: 14-99 év
+                    &nbsp;&nbsp; Játszható: Laptopról &nbsp;&nbsp; Ár: Ingyenes
 
-                <p><i>A kezdés előtt érdemes elolvasni a részletes játékbemutatót!</i></p></div></div>
-           
+                <p>Megjelenés: 2025. február 08.</p>
+                <div class="text2">
+
+                    <p><i>A kezdés előtt érdemes elolvasni a részletes játékbemutatót!</i></p>
+                </div>
+            </div>
+
         </div>
     </div>
 
 </body>
+
 </html>
